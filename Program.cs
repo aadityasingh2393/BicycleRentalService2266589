@@ -43,11 +43,11 @@ builder.Services.AddScoped<IAuthUserRepository, AuthUserRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Human Resources API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BicycleRentalSystem", Version = "v1" });
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Description = @"JWT <strong>Authorization</strong> header using the Bearer scheme. <br/> 
-                      Enter your token in the text input below.
+        Description = @"JWT <strong>Authorization</strong> header using the Bearer scheme. <br/>Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  Enter your token in the text input below.
 <br/>Example: <i>'12345abcdef'</i>",
         Name = "Authorization",
         In = ParameterLocation.Header,
